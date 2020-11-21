@@ -1,11 +1,23 @@
-
-section{
-    //position:absolute;
-   // left: 15%;
+section {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
     margin: 0;
+    padding: 0;
     width: 100%;
-    height: 69vh;
-   
-    background-color: burlywood;//
-    border: 1px solid rgb(1, 1, 8);
-}
+    height: 32vh;
+    .swiper-container {
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 20vw;
+        height: 180px;
+    }
+  }
+ 
