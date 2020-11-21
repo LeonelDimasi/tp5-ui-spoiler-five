@@ -1,0 +1,71 @@
+.contenedor{
+    border:1px solid black;
+    margin:auto;
+    width:70%;
+    position:relative;
+    margin-top:12vh;
+    .icono{
+        margin: auto;
+        text-align:center;
+        img{
+            width:80px;
+            position: relative;
+           
+        }
+    }
+
+
+h2,h6{
+    text-align: center;
+}
+.botones{
+    margin:auto;
+    text-align: center;
+}
+button{
+    width: 40%;
+    height:80px;
+    position: relative;
+    margin: 59px;
+}
+button.loginWithGoogle {
+    width: 40vh;
+    background: #df4a32;
+    color: white;
+    font-family: helvetica;
+    border: none;
+    border-radius: 2vw;
+    font-size: 2vh;
+    height: 7vh;
+    line-height: 7vh;
+    margin-bottom: 13vh;
+    .icon {
+      width: 4vw;
+     // border-right: 1px solid #be3f2b;
+      float: left;
+      svg {
+        height: 4vh;
+      }
+    }
+  }
+  button.loginWithFacebook {
+    width: 40vh;
+    background: #5c8bc3;
+    color: white;
+    font-family: helvetica;
+    border: none;
+    border-radius: 2vw;
+    font-size: 2vh;
+    height: 7vh;
+    line-height: 7vh;
+    margin-bottom: 0vh;
+    .icon {
+      width: 4vw;
+      //border-right: 1px solid #be3f2b;
+      float: left;
+      svg {
+        height: 4vh;
+      }
+    }
+  }
+}

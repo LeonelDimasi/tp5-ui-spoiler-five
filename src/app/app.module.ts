@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainSeccionComponent } from './components/main-seccion/main-seccion.component';
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { ControlBarComponent } from './components/control-bar/control-bar.compon
     HeaderComponent,
     SidebarComponent,
     MainSeccionComponent,
-    ControlBarComponent
+    ControlBarComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
