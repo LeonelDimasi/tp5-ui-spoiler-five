@@ -29,15 +29,17 @@ button{
     margin: 59px;
 }
 button.loginWithGoogle {
-    width: 40vh;
+    width: 35vh;
     background: #df4a32;
     color: white;
     font-family: helvetica;
     border: none;
-    border-radius: 2vw;
     font-size: 2vh;
     height: 7vh;
-    line-height: 7vh;
+    position: relative;
+    margin:auto;
+    line-height:7vh;
+    margin-top:11vh;
     margin-bottom: 13vh;
     .icon {
       width: 4vw;
@@ -49,16 +51,17 @@ button.loginWithGoogle {
     }
   }
   button.loginWithFacebook {
-    width: 40vh;
+    width: 35vh;
     background: #5c8bc3;
     color: white;
     font-family: helvetica;
     border: none;
-    border-radius: 2vw;
     font-size: 2vh;
     height: 7vh;
     line-height: 7vh;
-    margin-bottom: 0vh;
+    top: 5vh;
+    position: relative;
+    margin:auto;
     .icon {
       width: 4vw;
       //border-right: 1px solid #be3f2b;
