@@ -8,7 +8,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class PriceTableComponent implements OnInit {
 
-  constructor( private activeModal: NgbActiveModal,) { }
+  constructor( private activeModal: NgbActiveModal) { }
 
   ngOnInit(): void {
   }

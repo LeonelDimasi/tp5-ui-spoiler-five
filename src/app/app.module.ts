@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PriceTableComponent } from './components/popups/price-table/price-table.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
 import { LahamburguesaComponent } from './components/lahamburguesa/lahamburguesa.component';
+import { QualificationComponent } from './components/popups/qualification/qualification.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { LahamburguesaComponent } from './components/lahamburguesa/lahamburguesa
     LoginComponent,
     PriceTableComponent,
     PlaylistComponent,
-    LahamburguesaComponent
+    LahamburguesaComponent,
+    QualificationComponent
   ],
   imports: [
     BrowserModule,
