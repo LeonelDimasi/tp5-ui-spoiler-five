@@ -1,5 +1,5 @@
-<app-header></app-header>
-<div class="row">
+<app-header *ngIf="!isLoginRoute()"></app-header>
+<div class="row" *ngIf="!isLoginRoute()">
     <div class="col-md-2 d-none d-xl-block " style=" padding-right: 0px!important;" >
         <app-sidebar></app-sidebar>
     </div>
@@ -9,6 +9,6 @@
     </div>
   
 </div>
-<app-control-bar></app-control-bar>
+<app-control-bar *ngIf="!isLoginRoute()"></app-control-bar>
 
-
+<router-outlet *ngIf="isLoginRoute()"></router-outlet>
