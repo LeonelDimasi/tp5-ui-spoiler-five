@@ -8,6 +8,7 @@ import { MainSeccionComponent } from './components/main-seccion/main-seccion.com
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
 
 import { LoginComponent } from './components/login/login.component';
+import { PlaylistComponent } from './components/playlist/playlist.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { LoginComponent } from './components/login/login.component';
     SidebarComponent,
     MainSeccionComponent,
     ControlBarComponent,
-    LoginComponent
+    LoginComponent,
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,
