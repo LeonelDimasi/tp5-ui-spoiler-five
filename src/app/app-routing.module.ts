@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { LoginComponent } from '../app/components/login/login.component';
 import { MainSeccionComponent } from './components/main-seccion/main-seccion.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
