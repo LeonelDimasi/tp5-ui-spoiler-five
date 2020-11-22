@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TP5UI"
+    }
+  },
+  "defaultProject": "TP5UI",
+  "cli": {
+    "analytics": "93417bf8-8a96-47fc-bfd2-2f6be6d1dce3"
+  }
 }
