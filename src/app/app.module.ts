@@ -6,7 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MainSeccionComponent } from './components/main-seccion/main-seccion.component';
 import { ControlBarComponent } from './components/control-bar/control-bar.component';
-import { HomeComponent } from './components/home/home.component';
+
 import { LoginComponent } from './components/login/login.component';
 
 
@@ -17,7 +17,6 @@ import { LoginComponent } from './components/login/login.component';
     SidebarComponent,
     MainSeccionComponent,
     ControlBarComponent,
-    HomeComponent,
     LoginComponent
   ],
   imports: [
