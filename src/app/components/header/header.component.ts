@@ -21,8 +21,7 @@ export class HeaderComponent implements OnInit {
   
 
   cambiarPlan() {
-    const modalRef = this.modalService.open(PriceTableComponent, { windowClass: 'modal-holder', centered: true });
-    modalRef.componentInstance.titulo = "Ventajas de ser Premium";
+    const modalRef = this.modalService.open(PriceTableComponent, { windowClass: 'modal-holder',size:'xl', centered: true });
     
   }
 
