@@ -23,7 +23,8 @@
     "rxjs": "~6.5.5",
     "swiper": "^6.3.5",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.3",
+    "swiper": "^5.3.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.2",
