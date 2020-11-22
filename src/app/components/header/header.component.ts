@@ -7,7 +7,7 @@ import { PriceTableComponent } from '../popups/price-table/price-table.component
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  hamburguesa = false;
   constructor( 
     private modalService: NgbModal
    
@@ -24,6 +24,11 @@ export class HeaderComponent implements OnInit {
     const modalRef = this.modalService.open(PriceTableComponent, { windowClass: 'modal-holder', centered: true });
     modalRef.componentInstance.titulo = "Ventajas de ser Premium";
     
+  }
+
+  toggleHamburguesa(){
+   
+    this.hamburguesa = !this.hamburguesa;
   }
 
 }
