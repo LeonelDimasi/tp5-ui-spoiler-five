@@ -10,6 +10,7 @@ import { ControlBarComponent } from './components/control-bar/control-bar.compon
 import { LoginComponent } from './components/login/login.component';
 import { PriceTableComponent } from './components/popups/price-table/price-table.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
+import { LahamburguesaComponent } from './components/lahamburguesa/lahamburguesa.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PlaylistComponent } from './components/playlist/playlist.component';
     ControlBarComponent,
     LoginComponent,
     PriceTableComponent,
-    PlaylistComponent
+    PlaylistComponent,
+    LahamburguesaComponent
   ],
   imports: [
     BrowserModule,
