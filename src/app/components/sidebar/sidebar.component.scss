@@ -9,3 +9,40 @@ aside{
     background-color: burlywood;//
     border: 1px solid rgb(1, 1, 8);
 }
+nav{
+  position:relative;
+  margin-top:8vh;
+}
+.icon {
+  width: 4vw;
+  //border-right: 1px solid #be3f2b;
+  float: left;
+  position:relative;
+  left:1vw;
+    svg {
+      height: 4vh;
+    }
+  }  
+  .iconHome {
+    width: 5vw;
+    //border-right: 1px solid #be3f2b;
+    float: left;
+    position:relative;
+    margin:auto;
+    text-align:center;
+     svg {
+        margin-top:6vh;
+       height: 5vh;
+       color:grey;
+      } 
+  }
+  ul{
+    position:relative;
+    margin-bottom:2vh;
+    li{
+      position:relative;
+      margin-top:2vh;
+      font-size: 16px;
+    }
+  }
+ 
