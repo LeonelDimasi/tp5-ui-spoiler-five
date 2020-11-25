@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PriceTableComponent } from './components/popups/price-table/price-table.component';
 import { PlaylistComponent } from './components/playlist/playlist.component';
 import { LahamburguesaComponent } from './components/lahamburguesa/lahamburguesa.component';
+import { FaqAccordionComponent } from './components/faq-accordion/faq-accordion.component';
 import { QualificationComponent } from './components/popups/qualification/qualification.component';
 
 
@@ -25,6 +26,7 @@ import { QualificationComponent } from './components/popups/qualification/qualif
     PriceTableComponent,
     PlaylistComponent,
     LahamburguesaComponent,
+    FaqAccordionComponent,
     QualificationComponent
   ],
   imports: [
