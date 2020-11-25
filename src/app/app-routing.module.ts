@@ -8,7 +8,7 @@ import { PlaylistComponent } from './components/playlist/playlist.component';
 
 const routes: Routes = [
   {path:'home',component:MainSeccionComponent},
-  {path:'faq',component:FaqAccordionComponent},
+  {path:'faqs',component:FaqAccordionComponent},
   {path:'login',component:LoginComponent},
   {path:'**',pathMatch:'full',redirectTo:'login'},
   {path:'playlist',component:PlaylistComponent},
