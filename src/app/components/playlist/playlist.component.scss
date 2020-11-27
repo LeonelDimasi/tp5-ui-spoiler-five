@@ -1,9 +1,78 @@
 section {
-    
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 80vh;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 80vh;
+    .back{
+        float:left;
+        width:7vh;
+        position: relative;
+        top:3%;
+        left:5%;
+        svg{
+            height:7vh;
+        }
+    }
+        h2{
+            text-align: center;
+            position:relative;
+            top:10vh;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            position:relative;
+            width: 15%;
+            height: 22vh;
+            @media screen and (max-width: 500px)
+              {
+                background-position: center;
+                background-size: cover;
+                width: 39%;
+                height: 22vh;
+              }
+        }
+        .iconPlay{
+            width:5vh;
+            position: relative;
+            margin: auto;
+            top:68%;
+            left:72%;
+            svg{
+                height:5vh;
+            }
+        }    
+        .iconMG{
+            width:8vh;
+            position: relative;
+            margin: auto;
+            top:46%;
+            left:102%;
+           
+            svg{
+                height:5vh;
+            }
+        } 
+        .iconMenu{
+            width:8vh;
+            position: relative;
+            margin: auto;
+            top:23%;
+            left:130%;
+           
+            svg{
+                height:5vh;
+            }
+        } 
+        
+    table{
+        position:absolute;
+        margin-top:34vh;
+    }
 
 
 

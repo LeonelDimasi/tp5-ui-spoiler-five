@@ -6,12 +6,14 @@ import { MainSeccionComponent } from './components/main-seccion/main-seccion.com
 import { PlaylistComponent } from './components/playlist/playlist.component';
 
 
+
 const routes: Routes = [
   {path:'home',component:MainSeccionComponent},
   {path:'faqs',component:FaqAccordionComponent},
   {path:'login',component:LoginComponent},
-  {path:'**',pathMatch:'full',redirectTo:'login'},
   {path:'playlist',component:PlaylistComponent},
+  {path:'**',pathMatch:'full',redirectTo:'login'},
+
 ];
 
 @NgModule({
