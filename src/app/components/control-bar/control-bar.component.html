@@ -73,6 +73,17 @@
                 </div>
             </div>
             <div class="col-3 col-sm-3">
+                <div class="volume">
+                    
+                    <div class="icon" *ngIf="!volumen==0">
+                      <i class="fa fa-volume-up icon-size" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon" *ngIf="volumen==0">
+                        <i class="fa fa-volume-mute icon-size" aria-hidden="true"></i>
+                    </div>
+                    <input id="volume" type="range" min="0" (click)="cambiarVolumen()"max="100" value="50" >
+                    
+                  </div>
                 <!-- <input type="range" name="" id=""> -->
             </div>
              <!-- <div class="col-12 row progreso">

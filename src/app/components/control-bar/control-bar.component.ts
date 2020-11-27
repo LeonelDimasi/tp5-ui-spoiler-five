@@ -10,15 +10,18 @@ import { QualificationComponent } from '../popups/qualification/qualification.co
 export class ControlBarComponent implements OnInit {
    myMedia = document.createElement('audio');
   constructor( private modalService: NgbModal) { }
-
+  volumen:number = 25;
   ngOnInit(): void {
-    
+  
   }
   calificarCancion() {
     const modalRef = this.modalService.open(QualificationComponent, { windowClass: 'modal-holder',size:'xl', centered: true });
-    
   }
-  
+  /*
+  cambiarVolumen(){
+    let input = document.getElementById("volume");
+    this.volumen = input.getAttribute('value').valueOf;
+  }*/
 	
 
 }
