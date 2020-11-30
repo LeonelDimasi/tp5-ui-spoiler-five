@@ -125,15 +125,16 @@ header{
                     display: flex;
                     .input {
                       flex-grow: 1;
-                      background-color: inherit;
+                      background-color: inherit !important;
                       border: none;
                       height: 100%;
                       font-size: 0.98rem;
                       font-weight: 400;
-                      color: #eee;
+                      //color: rgb(221, 26, 26);
                       &::placeholder {
                         color: #798b9a;
                       }
+                     
                     }
                   }
                 }

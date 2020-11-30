@@ -13,19 +13,19 @@ ul{
 
 
 aside{
-    //position:absolute;
+    position:absolute;
    // left: 0;
     margin: 0;
   //  width: 15%;
     height: 80vh;
     //padding: 10px;
-    background-color: $color-1;//
+    background-color: $color-2;//
    // border: 1px solid rgb(1, 1, 8);
    
 }
 nav{
   position:relative;
-  margin-top:8vh;
+  //margin-top:8vh;
 }
 .icon {
   width: 4vw;
@@ -48,8 +48,12 @@ nav{
      svg {
         margin-top:6vh;
        height: 5vh;
-       color:grey;
+       color:$letra-color;
+       &:hover{
+        color:white;
+       }
       } 
+
   }
   ul{
     position:relative;
@@ -63,7 +67,7 @@ nav{
  
   .usuario-container{
     // border: 1px solid blue;
-     background-color: $color-1;
+    // background-color: $color-1;
      //padding: 1vh;
      padding-left: 50px;
      color:$letra-color;
@@ -101,3 +105,5 @@ nav{
       }
      }
  }
+
+ 
