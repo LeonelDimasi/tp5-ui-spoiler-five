@@ -3,15 +3,39 @@
         <div class="col-3 col-sm-2 logo-container"> 
             <a href="home">
             <img  src="../../../assets/images/auriculares.png" alt="../../../assets/images/logo.jpg"></a>
-            <h6 class="d-none d-xl-block" >Spoiler Five</h6>
+            <h6 class="d-none d-xl-block"  >Spoiler Five</h6>
         
         </div>
-        <div class="col-6 col-sm-8 col-md-4   subscribite-container">
-            <button (click)="cambiarPlan()" >Cambiar de plan  </button>
-        </div>
+        <!-- <div class="col-6 col-sm-8 col-md-4   subscribite-container" data-toggle="tooltip" data-placement="right" title="mira todos los planes">
+            <button (click)="cambiarPlan()" >Planes</button>
+        </div> -->
         <div class="col-4  d-none d-xl-block buscar-container">
-            <input type="search" name="buscar" id="">
+            <!-- <input type="search" name="buscar" id=""> -->
+            <div class="wrapper">
+                <div class="right-pane">
+                  <div class="searchbox js-searchbox">
+                    <div class="searchbox-icon js-searchbox-icon">
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="searchbox-input">
+                      <input type="text" class="input js-input" id="searchInput js-searchInput" placeholder="Buscar en Spoiler Five">
+                    </div>
+                  </div>
+                  <div class="searchlist js-searchlist">
+                    <div class="searchlist-header">
+                      <div class="searchlist-header-title">Resultados</div>
+                      <div class="searchlist-header-clear js-searchlist-header-clear" onclick="clearInnerHtml('.searchlist')">Borrar todo</div>
+                    </div>
+                    <div class="searchlist-item-wrapper js-searchlist-item-wrapper">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script src="https://kit.fontawesome.com/d4b981459a.js" crossorigin="anonymous"></script>
         </div>
+        <div class="col-6 col-sm-8 col-md-4   subscribite-container" data-toggle="tooltip" data-placement="right" title="mira todos los planes">
+          <button (click)="cambiarPlan()" >Planes</button>
+      </div>
         <div class="col-2  d-none d-xl-block  usuario-container">
             <div class="row">
                 <div >

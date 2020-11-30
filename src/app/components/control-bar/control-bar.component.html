@@ -2,7 +2,7 @@
     <div class="row fila-footer">
         <div class="col-2  d-none d-lg-block  album-container">
              <div class="row">
-                <div class="col-6 albun-foto">
+                <div class="col-6 albun-foto" >
                     <img src="../../../assets/images/usuario.png" alt="">
                 </div>
                 <div class="col-6 info-tema">
@@ -19,7 +19,7 @@
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
                                 enable-background="new 0 0 1000 1000" xml:space="preserve">
                                 <g>
-                                    <path
+                                    <path fill="currentColor"
                                         d="M807.3,340.8v98.8c0,24.2,13.8,29.8,30.8,12.7l140.8-142.2c14.9-15,14.9-39.4,0-54.5L838,113.5c-17-17.2-30.8-11.5-30.8,12.7v75.2h-178c-183.9,0-317,458.4-431.8,458.4H75.7c-36.3,0-65.7,29.4-65.7,65.7v8.1c0,36.3,29.4,65.7,65.7,65.7h121.8c183.9,0,317-458.4,431.8-458.4H807.3z M518.4,558.1c39.3,59.1,75.9,101.6,110.9,101.6h178v-97.8c0-24.7,14.1-30.5,31.5-13l139.5,140.8c15.2,15.4,15.2,40.3,0,55.7L838.7,886.3c-17.4,17.6-31.5,11.8-31.5-13v-74.2h-178c-67.5,0-121.2-53.3-176.7-131.1L518.4,558.1z M311.5,447c-42.6-66.1-76.5-106.2-114.1-106.2H77.1c-37.1,0-67.1-30.1-67.1-67.2v-5.1c0-37.1,30.1-67.2,67.1-67.2h120.3c66.2,0,128.1,62.4,183.4,139.5L311.5,447z" />
                                 </g>
                             </svg></div>
@@ -37,8 +37,8 @@
             </div>
             <div class="col-6 col-sm-6 d-flex justify-content-center btns-control">
                 <div class="row ">
-                    <div class="btn-back-song">
-                        <div> <a href="#" class="back-btn" data-vbtype="video" data-autoplay="true">
+                    <div class="btn-back-song" >
+                        <div data-toggle="tooltip" data-placement="up" title="tema anterior"> <a href="#" class="back-btn" data-vbtype="video" data-autoplay="true">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="step-backward"
                                     role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                                     class="svg-inline--fa fa-step-backward fa-w-14">
@@ -47,8 +47,8 @@
                                         class=""></path>
                                 </svg></a></div>
                     </div>
-                    <div class=" btn-play">
-                        <div> <a href="#" class="pause-btn" data-vbtype="video" data-autoplay="true"><svg
+                    <div class=" btn-play" >
+                        <div data-toggle="tooltip" data-placement="top" title="pausa"> <a href="#" class="pause-btn" data-vbtype="video" data-autoplay="true"><svg
                                     aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pause" role="img"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                                     class="svg-inline--fa fa-pause fa-w-14">
@@ -56,7 +56,7 @@
                                         d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z"
                                         class=""></path>
                                 </svg></a></div>
-                        <!-- <div> <a href="#" class="play-btn" data-vbtype="video" data-autoplay="true"></a></div> -->
+                        <!-- <div data-toggle="tooltip" data-placement="top" title="reproducir"> <a href="#" class="play-btn" data-vbtype="video" data-autoplay="true"></a></div> -->
                      </div>
                     <div class="btn-next-song">
                         <div> <a href="#" class="next-btn" data-vbtype="video" data-autoplay="true">
@@ -94,7 +94,7 @@
         </div>
         <div class="col-2 d-none d-lg-block opciones-container">
              <div class="row btns-control">
-                <div class="col-6 btn-aleatorio">
+                <div class="col-6 btn-aleatorio" data-toggle="tooltip" data-placement="right" title="reproducion aleatoria">
                     <div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="repeat" role="img"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                             class="svg-inline--fa fa-repeat fa-w-16">
@@ -105,7 +105,7 @@
                 </div>
                 <div class="col-6 btn-repeat">
                   
-                    <div (click)="calificarCancion()"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" class=""></path></svg></div>
+                    <div (click)="calificarCancion()" data-toggle="tooltip" data-placement="right" title="dale me gusta!!"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" class=""></path></svg></div>
                 </div>
             </div> 
 

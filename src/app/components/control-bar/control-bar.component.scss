@@ -1,3 +1,8 @@
+@import "../../../styles.scss";
+
+svg{
+    color:$letra-color;
+}
 footer{
     position:absolute;
     left: 0;
@@ -5,7 +10,7 @@ footer{
     margin: 0;
     width: 100%;
     //padding: 10px;
-    background-color: burlywood;//
+    background-color: $color-1;//
     border: 1px solid rgb(1, 1, 8);
     height: 10vh;
    /* .fila-footer{
@@ -15,7 +20,7 @@ footer{
         margin-right: 0;*/
         .album-container{
             border: 1px solid blue;
-            background-color: rgb(240, 145, 12);
+            background-color: $color-1;
             display: flex;
             align-items: center;
            // padding: 10px;
@@ -29,7 +34,7 @@ footer{
         }
         .controles-container{
             border: 1px solid blue;
-            background-color: rgb(240, 145, 12);
+            background-color: $color-1;
             display: flex;
             align-items: center;
 
@@ -70,7 +75,7 @@ footer{
         .opciones-container{
 
             border: 1px solid blue;
-            background-color: rgb(240, 145, 12);
+            background-color: $color-1;
             display: flex;
             align-items: center;
             border: 1px solid blue;

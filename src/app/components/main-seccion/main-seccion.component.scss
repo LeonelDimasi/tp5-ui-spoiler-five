@@ -1,8 +1,9 @@
+@import "../../../styles.scss";
 section {
-    background: #eee;
+    background: $color-2;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color:#000;
+    color:$letra-color;
     margin: 0;
     padding: 0;
     width: 100%;
