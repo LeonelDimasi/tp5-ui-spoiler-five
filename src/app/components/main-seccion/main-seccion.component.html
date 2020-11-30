@@ -27,8 +27,8 @@
 		<!-- <div class="swiper-pagination"></div> -->
     </div>
     <h4>Mis Playlists</h4>
-    <div class="swiper-container">
-		<div class="swiper-wrapper ">
+    <div  class="swiper-container">
+		<!-- <div class="swiper-wrapper ">
 			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-1.jpg)">
 			</div>
 			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-2.jpg)">
@@ -49,6 +49,20 @@
 			</div>
 			<div class="swiper-slide" style="background-image:url(https://swiperjs.com/demos/images/nature-10.jpg)">
 			</div>
+		</div> -->
+		<div class="swiper-wrapper ">
+			<div class="swiper-slide card-playlist" *ngFor="let playlist of playlists" style="background-image:url({{playlist.urlImg}})" (click)="irA(playlist.id)">
+				
+					<div class="info" >
+						<p>{{playlist.nombre | titlecase}}</p>
+						<p>By: {{playlist.creador }}</p>
+					</div>
+					
+				
+			</div>
+			
+			
+			
 		</div>
 		
 		<!-- <div class="swiper-pagination"></div> -->
