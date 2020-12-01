@@ -12,8 +12,8 @@ const routes: Routes = [
   {path:'faqs',component:FaqAccordionComponent},
   {path:'login',component:LoginComponent},
   {path:'playlist',component:PlaylistComponent},
-  {path:'playlist/:id',component:PlaylistComponent},
- // {path:'**',pathMatch:'full',redirectTo:'login'},
+  //{path:'playlist/:id',component:PlaylistComponent},
+  {path:'**',pathMatch:'full',redirectTo:'login'},
 
 ];
 

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,6 +13,8 @@ import { PlaylistComponent } from './components/playlist/playlist.component';
 import { LahamburguesaComponent } from './components/lahamburguesa/lahamburguesa.component';
 import { FaqAccordionComponent } from './components/faq-accordion/faq-accordion.component';
 import { QualificationComponent } from './components/popups/qualification/qualification.component';
+import { QuestionComponent } from './components/popups/question/question.component';
+import { QualificationPlaylistComponent } from './components/popups/qualification-playlist/qualification-playlist.component';
 
 
 @NgModule({
@@ -27,11 +29,14 @@ import { QualificationComponent } from './components/popups/qualification/qualif
     PlaylistComponent,
     LahamburguesaComponent,
     FaqAccordionComponent,
-    QualificationComponent
+    QualificationComponent,
+    QuestionComponent,
+    QualificationPlaylistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule
     
   ],
   providers: [

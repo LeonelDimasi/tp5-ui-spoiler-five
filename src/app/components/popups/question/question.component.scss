@@ -1,0 +1,49 @@
+
+.btnClose{
+    float:right;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    margin-right:4px;
+  }
+  
+  .icono{
+    width: 2vw;
+    //border-right: 1px solid #be3f2b;
+    position:relative;
+    left:1vw;
+      svg {
+        height: 2vh;
+      }
+    }  
+  .pop-up{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  
+  }
+  
+  .boton{
+    padding: 2vh;
+    display:inline-block;
+  }
+  .fondoPopUp{
+    height: 22px;
+    width: 100%;
+    background-color:#2da744;
+  
+  }
+  button {
+    width: 35vh;
+    background: #2da744;
+    color: white;
+    font-family: helvetica;
+    border: none;
+    font-size: 2vh;
+    height: 7vh;
+    line-height: 7vh;
+    position: relative;
+    margin:auto;
+  }
+  * { box-sizing: border-box; }

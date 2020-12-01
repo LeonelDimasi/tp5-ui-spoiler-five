@@ -51,7 +51,7 @@
 			</div>
 		</div> -->
 		<div class="swiper-wrapper ">
-			<div class="swiper-slide card-playlist" *ngFor="let playlist of playlists" style="background-image:url({{playlist.urlImg}})" (click)="irA(playlist.id)">
+			<div class="swiper-slide card-playlist" *ngFor="let playlist of playlists" style="background-image:url({{playlist.urlImg}})"  (click)="irA(playlist.id)">
 				
 					<div class="info" >
 						<p>{{playlist.nombre | titlecase}}</p>

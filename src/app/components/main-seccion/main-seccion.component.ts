@@ -21,7 +21,7 @@ export class MainSeccionComponent implements OnInit {
     {
       id:1,
       nombre:"musica para codear",
-      urlImg:"https://i1.wp.com/con2bemolesradio.com/wp-content/uploads/2017/11/ROCK.jpg?fit=350%2C401&ssl=1",
+      urlImg:"",
       creador:"juan perez",
 
     },
