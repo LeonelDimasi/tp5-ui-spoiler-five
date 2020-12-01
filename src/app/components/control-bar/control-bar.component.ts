@@ -15,7 +15,7 @@ export class ControlBarComponent implements OnInit {
   
   }
   calificarCancion() {
-    const modalRef = this.modalService.open(QualificationComponent, { windowClass: 'modal-holder',size:'xl', centered: true });
+    const modalRef = this.modalService.open(QualificationComponent, { windowClass: 'modal-holder',size:'md', centered: true });
   }
   /*
   cambiarVolumen(){

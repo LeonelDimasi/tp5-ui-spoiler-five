@@ -1,1 +1,39 @@
-<p>qualification-playlist works!</p>
+
+  <div class="overlay">
+    <div class="pop-up">
+      <div class=fondoPopUp>
+
+        <div class="btnClose" (click)="closePopUp()">
+          <span>X</span>
+        </div>
+      </div>
+
+      <h3>Calificá la playlist </h3>
+
+      <div class="container">
+        <div class="feedback">
+          <div class="rating">
+            <input type="radio" name="rating" id="rating-5">
+            <label  for="rating-5"></label>
+            <input type="radio" name="rating" id="rating-4">
+            <label for="rating-4"></label>
+            <input type="radio" name="rating" id="rating-3">
+            <label for="rating-3"></label>
+            <input type="radio" name="rating" id="rating-2">
+            <label for="rating-2"></label>
+            <input type="radio" name="rating" id="rating-1">
+            <label for="rating-1"></label>
+            <div class="emoji-wrapper">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="comentario">
+        <textarea name="" id="" cols="50" placeholder="Ingrese un comentario..." rows="5"></textarea>
+    </div>
+      <div>
+        <button (click)="closePopUp()">Guardar</button>
+      </div>
+      
+    </div>
+  </div>

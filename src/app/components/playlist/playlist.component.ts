@@ -17,10 +17,10 @@ export class PlaylistComponent implements OnInit {
 
 
   eliminarPlaylist(){
-    const modalRef = this.modalService.open(QuestionComponent, { windowClass: 'modal-holder',size:'xl', centered: true });
+    const modalRef = this.modalService.open(QuestionComponent, { windowClass: 'modal-holder',size:'md', centered: true });
   }
 
   calificarPlaylist() {
-    const modalRef = this.modalService.open(QualificationPlaylistComponent, { windowClass: 'modal-holder',size:'xl', centered: true });
+    const modalRef = this.modalService.open(QualificationPlaylistComponent, { windowClass: 'modal-holder',size:'md', centered: true });
   }
 }
