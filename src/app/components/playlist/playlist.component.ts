@@ -10,6 +10,37 @@ import { QualificationPlaylistComponent } from '../popups/qualification-playlist
 })
 export class PlaylistComponent implements OnInit {
 
+  temas=[
+    {
+      titulo:"El Final Es En Donde Parti",
+      artista:"La Renga",
+      album:"Despedazado Por Mil Partes",
+      promedio:3.5,
+      duracion:"3:30",
+    },
+    {
+      titulo:"El Final Es En Donde Parti",
+      artista:"La Renga",
+      album:"Despedazado Por Mil Partes",
+      duracion:"3:30",
+      promedio:4.5,
+    },
+    {
+      titulo:"El Final Es En Donde Parti",
+      artista:"La Renga",
+      album:"Despedazado Por Mil Partes",
+      duracion:"3:30",
+      promedio:3.1,
+    },
+    {
+      titulo:"El Final Es En Donde Parti",
+      artista:"La Renga",
+      album:"Despedazado Por Mil Partes",
+      duracion:"3:30",
+      promedio:4.2,
+    }
+  ];
+
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {

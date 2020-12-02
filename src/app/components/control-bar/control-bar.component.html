@@ -74,6 +74,8 @@
             </div>
             <div class="col-3 col-sm-3">
                 <div class="volume">
+                    <i class="fas fa-volume-up"></i>
+                    <input id="volume" type="range" min="0" max="100" value="50" > 
 <!--                     
                     <div class="icon" *ngIf="!volumen==0">
                       <i class="fa fa-volume-up icon-size" aria-hidden="true"></i>
@@ -86,11 +88,11 @@
                   </div>
                 <!-- <input type="range" name="" id=""> -->
             </div>
-             <!-- <div class="col-12 row progreso">
+              <div class="col-12 row progreso">
                 <p>00:00</p>
-                <div style="background-color: blue; width: 85%; height: 8px;"></div>
+                    <div class="progreso-bar"></div>
                 <p>00:00</p>
-            </div>   -->
+            </div>   
         </div>
         <div class="col-2 d-none d-lg-block opciones-container">
              <div class="row btns-control">

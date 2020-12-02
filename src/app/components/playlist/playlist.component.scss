@@ -1,6 +1,6 @@
 @import "../../../styles.scss";
 section {
-        background:$color-1;
+        background:$color-4;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color:$letra-color;
@@ -71,8 +71,41 @@ section {
         } 
         
     table{
+
         position:absolute;
+       
+        margin: 10%;
         margin-top:34vh;
+     //   justify-content: center;
+        width: 80%;
+        @media screen and (max-width: 600px) {
+            margin: 2.5%;
+            margin-top:34vh;
+            left: 2%;
+            width: 95%;
+            
+        }
+        .encabezado{
+            color: $letra-color-hover;
+            th, td{
+                padding: 3px;
+                margin: 0;
+                height: 1vh!important;
+            }
+        }
+        .tema-fila{
+           
+            color: $letra-color;
+            th, td{
+                padding: 3px;
+                margin: 0;
+                height: 1vh!important;
+            }
+            &:hover{
+                color: $letra-color-hover;
+                background: $color-2 !important;
+            }
+        }
     }
 
 

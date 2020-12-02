@@ -54,7 +54,7 @@ export class HeaderComponent implements OnInit {
     ];
 
     users.map(function (e) {
-      this.searchlistItems.innerHTML = this.searchlistItems.innerHTML.concat(`
+     /* this.searchlistItems.innerHTML = this.searchlistItems.innerHTML.concat(`
        <div class="searchlist-item">
           <div class="searchlist-item-pic">
             <img class="searchlist-item-pic-img" src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/egg-3442-e1f6463624338504cd021bf23aef8441@1x.jpg">
@@ -65,14 +65,14 @@ export class HeaderComponent implements OnInit {
           </div>
           <div class="searchlist-item-clear"><i class="fas fa-times"></i></div>
         </div>
-  `);
+  `);*/
     });
 
 
   }
 
    showSearchlist() {
-    this.searchlist.classList.add("searchlistVisible");
+    //this.searchlist.classList.add("searchlistVisible");
     this.searchbox.classList.add("searchbox-searchlistVisible");
   }
 

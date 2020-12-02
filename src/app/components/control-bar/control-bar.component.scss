@@ -6,20 +6,21 @@ svg{
 footer{
     position:absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0vh;
     margin: 0;
     width: 100%;
-    //padding: 10px;
+    margin-left: 0;
+    margin-right: 0;
     background-color: $color-1;//
-    border: 1px solid rgb(1, 1, 8);
-    height: 10vh;
+    //border: 1px solid rgb(1, 1, 8);
+    height: 13vh;
    /* .fila-footer{
         border: 1px solid rgb(148, 148, 180);
         background-color: rgb(129, 116, 98);//
         margin-left: 0;
         margin-right: 0;*/
         .album-container{
-            border: 1px solid blue;
+           // border: 1px solid blue;
             background-color: $color-1;
             display: flex;
             align-items: center;
@@ -33,20 +34,20 @@ footer{
             }
         }
         .controles-container{
-            border: 1px solid blue;
+           // border: 1px solid blue;
             background-color: $color-1;
             display: flex;
             align-items: center;
 
             .btns-control{
-                border: 1px solid blue;
+              // border: 1px solid blue;
                 display: flex;
                 align-items: center;
                 .btn-aleatorio,.btn-repeat{
                     //display: flex;
                     //align-items: center;
                     
-                    border: 1px solid blue;
+                  //  border: 1px solid blue;
                     svg{
                         width: 4vh; 
                     }
@@ -54,13 +55,13 @@ footer{
                 }
                 .btn-play{
                     padding: 0.5vw;
-                    border: 1px solid blue;
+                   // border: 1px solid blue;
                 }
                 .btn-back-song,.btn-next-song{
                     padding: 0.5vw;
                     display: flex;
                     align-items: center;
-                    border: 1px solid blue;
+                  //  border: 1px solid blue;
                    
                 }
             }
@@ -74,18 +75,18 @@ footer{
         }
         .opciones-container{
 
-            border: 1px solid blue;
+           // border: 1px solid blue;
             background-color: $color-1;
             display: flex;
             align-items: center;
-            border: 1px solid blue;
+            //border: 1px solid blue;
             display: flex;
             align-items: center;
             .btn-aleatorio,.btn-repeat{
                 //display: flex;
                 //align-items: center;
                 
-                border: 1px solid blue;
+               // border: 1px solid blue;
                 svg{
                     width: 4vh; 
                 }
@@ -281,3 +282,33 @@ footer{
         
       
 //volume
+.volume{
+    i{
+        color:$letra-color;
+        padding-right: 5px;
+    }
+    input{
+        background-color: $letra-color;
+        --swiper-theme-color:$color-3;
+        @media screen and (max-width: 600px) {
+            display: none;
+            -webkit-appearance: slider-vertical;
+            
+        }
+    }
+   
+}
+.progreso-bar{
+    padding-left: 13%;
+    background-color: rgb(172, 92, 81);
+    width: 85%;
+    height: 6px;
+}
+
+.fila-footer{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
