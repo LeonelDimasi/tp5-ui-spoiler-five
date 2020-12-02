@@ -1,4 +1,4 @@
-
+@import "../../../../styles.scss";
 .btnClose{
   float:right;
   cursor: pointer;
@@ -13,14 +13,43 @@
   //border-right: 1px solid #be3f2b;
   position:relative;
   left:1vw;
+  color:$letra-color;
     svg {
       height: 2vh;
     }
   }  
+
+    .contenedor{
+      position:relative;
+      left:23vh;
+      .icono2{
+        width: 2vw;
+        //border-right: 1px solid #be3f2b;
+        position:relative;
+        left:1vw;
+        color:$letra-color;
+          svg {
+            height: 2vh;
+            position: relative;
+           // right:16vh;
+          }
+        }  
+      @media screen and (max-width: 800px)
+      {
+        position:relative;
+        left:0vh;
+        svg {
+          height: 2vh;
+          position: relative;
+          right:16vh;
+        }
+      }
+    }
 .pop-up{
   width: 100%;
   text-align: center;
   margin: auto;
+  background-color: $color-2;
 
 }
 
@@ -30,7 +59,7 @@
 .fondoPopUp{
   height: 22px;
   width: 100%;
-  background-color:#2da744;
+  background-color:$color-3;
 
 }
 
@@ -43,7 +72,7 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 body {
-  background-color: #dff9fb;
+  background-color:$color-3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,11 +80,16 @@ body {
 }
 h1 {
   text-align: center;
-  margin-top: 2rem;
+  color: $letra-color;
 }
 p {
   text-align: center;
-  margin-bottom: 4rem;
+  color: $letra-color;
+  width:35vh;
+  left:2vh;
+  position:relative;
+  bottom:4vh;
+
 }
 .pricing {
   display: flex;
@@ -63,7 +97,7 @@ p {
   justify-content: center;
 
   .plan {
-    background-color: #fff;
+    background-color:$color-1;
     padding: 2.5rem;
     margin: 12px;
     border-radius: 5px;
@@ -74,11 +108,13 @@ p {
     h2 {
       font-size: 22px;
       margin-bottom: 12px;
+      color:$letra-color;
     }
 
     .price {
       margin-bottom: 1rem;
       font-size: 30px;
+      color:$letra-color;
     }
 
     ul.features {
@@ -86,15 +122,7 @@ p {
       text-align: left;
       li {
         margin: 8px;
-        .fas {
-          margin-right: 4px;
-        }
-        .fa-check-circle {
-          color: #6ab04c;
-        }
-        .fa-times-circle {
-          color: #eb4d4b;
-        }
+      
       }
     }
 
@@ -103,7 +131,7 @@ p {
       width: 100%;
       padding: 12px 35px;
       margin-top: 1rem;
-      background-color: #6ab04c;
+      background-color: $color-3;
       color: #fff;
       border-radius: 5px;
       cursor: pointer;
@@ -133,3 +161,5 @@ p {
     }
   }
 }
+
+
