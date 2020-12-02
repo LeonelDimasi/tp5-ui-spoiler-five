@@ -29,6 +29,8 @@ footer{
                 height: 11vh;
             }
             .info-tema p{
+                font-weight: 300;
+                font-size: 12px;
                 padding: 0;
                 margin: 0;
             }
@@ -38,7 +40,7 @@ footer{
             background-color: $color-1;
             display: flex;
             align-items: center;
-
+            padding-left: 50px;
             .btns-control{
               // border: 1px solid blue;
                 display: flex;
@@ -92,6 +94,16 @@ footer{
                 }
 
             }
+            .opciones{
+                position: relative;
+                top: 3vh;
+                left: 5vh;
+              }
+              .corazon{
+                position: relative;
+                top: 3vh;
+                left: 5vh;
+              }
            
         }
 
@@ -344,3 +356,30 @@ footer{
     0% { left: 0; }
     100% { left: -100%; }
   }
+
+  //popover
+
+  /* Popover */
+.popover {
+    border: 2px solid black;
+}
+
+/* Popover Header */
+.popover-title {
+    background-color: #4c4d4d; 
+    color: #FFFFFF; 
+    font-size: 12px;
+    text-align:center;
+}
+
+/* Popover Body */
+.popover-content {
+     background-color: #4c4d4d; 
+    color: #FFFFFF; 
+    font-size: 12px;
+    text-align:center;
+}
+
+
+
+  

@@ -12,7 +12,7 @@ export class ControlBarComponent implements OnInit {
   constructor( private modalService: NgbModal) { }
   volumen:number = 25;
   ngOnInit(): void {
-  
+    this.ponerPopover()
   }
   calificarCancion() {
     const modalRef = this.modalService.open(QualificationComponent, { windowClass: 'modal-holder',size:'md', centered: true });
@@ -22,6 +22,15 @@ export class ControlBarComponent implements OnInit {
     let input = document.getElementById("volume");
     this.volumen = input.getAttribute('value').valueOf;
   }*/
-	
+	ponerPopover(){
+    //$(document).ready(function(){
+      //This triggers the pop over
+    //  $('[data-toggle="popover"]').popover();   
+      
+      // Triggers content on the button all through JS
+      //$('.btn-pop').popover({title: "<p>inside  popover</p>", content: "Text", html: true, placement: "right"}); 
+      
+    //});
+  }
 
 }

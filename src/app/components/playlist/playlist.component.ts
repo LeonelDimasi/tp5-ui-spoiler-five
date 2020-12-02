@@ -45,6 +45,7 @@ export class PlaylistComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+   
   }
 
 
@@ -77,4 +78,7 @@ export class PlaylistComponent implements OnInit {
     let barr = temass[i].getElementsByTagName('TH')[1].getElementsByTagName('DIV')
     barr[0].className ="barritas";
   }
+
+
+  
 }
