@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { QuestionComponent } from '../popups/question/question.component';
 import { QualificationPlaylistComponent } from '../popups/qualification-playlist/qualification-playlist.component';
+import { QualificationComponent } from '../popups/qualification/qualification.component';
  
 @Component({
   selector: 'app-playlist',
@@ -53,5 +54,27 @@ export class PlaylistComponent implements OnInit {
 
   calificarPlaylist() {
     const modalRef = this.modalService.open(QualificationPlaylistComponent, { windowClass: 'modal-holder',size:'md', centered: true });
+  }
+  calificarCancion() {
+    const modalRef = this.modalService.open(QualificationComponent, { windowClass: 'modal-holder',size:'md', centered: true });
+  }
+
+  seleccionarTema(i) {
+    let temass = document.getElementsByClassName("tema-fila");
+
+    console.log(i)
+    for (let index = 0; index < temass.length; index++) {
+      temass[index].className = "tema-fila";
+      if(temass[index].getElementsByTagName('TH')[1].getElementsByTagName('DIV')!=null){
+        let baxrr = temass[index].getElementsByTagName('TH')[1].getElementsByTagName('DIV')
+        baxrr[0].className ="";
+
+      }
+
+    }
+
+    temass[i].className = "tema-fila selected ";
+    let barr = temass[i].getElementsByTagName('TH')[1].getElementsByTagName('DIV')
+    barr[0].className ="barritas";
   }
 }
