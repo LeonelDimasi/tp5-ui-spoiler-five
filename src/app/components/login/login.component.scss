@@ -1,11 +1,14 @@
-
+@import "../../../styles.scss";
+  html{background-color: $color-1 !important;}
 .contenedor{
   
+   background-color: $color-1;
     border:1px solid black;
     margin:auto;
    // width:70%;
     position:relative;
-    margin-top:12vh;
+    height: 100%;
+    padding-top: 12vh;
     .icono{
         margin: auto;
         text-align:center;
@@ -19,6 +22,7 @@
 
 h2,h6{
     text-align: center;
+    color:$letra-color;
 }
 .botones{
     margin:auto;
