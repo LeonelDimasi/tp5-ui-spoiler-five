@@ -17,4 +17,26 @@ export class SidebarComponent implements OnInit {
 
     return this.router.navigate(['faqs']);
   }
+
+  redirectTo(){
+    let uri="faqs";
+     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+     this.router.navigate([uri]));
+     setTimeout(() => {
+       location.reload();
+     }, 1000);
+     
+  }
+
+  redirectToHome(){
+    let uri="home";
+     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+     this.router.navigate([uri]));
+     setTimeout(() => {
+       location.reload();
+     }, 1000);
+     
+  }
+
+  
 }
