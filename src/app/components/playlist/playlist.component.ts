@@ -3,6 +3,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { QuestionComponent } from '../popups/question/question.component';
 import { QualificationPlaylistComponent } from '../popups/qualification-playlist/qualification-playlist.component';
 import { QualificationComponent } from '../popups/qualification/qualification.component';
+import { Router } from '@angular/router';
  
 @Component({
   selector: 'app-playlist',
@@ -42,7 +43,7 @@ export class PlaylistComponent implements OnInit {
     }
   ];
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,private router:Router) { }
 
   ngOnInit(): void {
    
@@ -79,6 +80,14 @@ export class PlaylistComponent implements OnInit {
     barr[0].className ="barritas";
   }
 
-
+  redirectTo(){
+    let uri="home";
+     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
+     this.router.navigate([uri]));
+     setTimeout(() => {
+       location.reload();
+     }, 1000);
+     
+  }
   
 }
